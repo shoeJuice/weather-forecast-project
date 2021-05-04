@@ -34,7 +34,12 @@
 .mainScriptContainer{
     border-radius: 25px;
     background-color: white;
+    color: black;
     display: flex;
     padding: 45px;
     max-width: 450px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
 }
