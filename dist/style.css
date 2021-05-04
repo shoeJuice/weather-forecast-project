@@ -31,3 +31,10 @@
     z-index: 100;
 }
 
+.mainScriptContainer{
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    padding: 45px;
+    max-width: 450px;
+}
