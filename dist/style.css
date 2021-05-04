@@ -36,10 +36,86 @@
     background-color: white;
     color: black;
     display: flex;
-    padding: 45px;
-    max-width: 450px;
+    padding: 20px;
+    min-width: 450px;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: space-between;
     flex-direction: column;
+}
+
+.mainScriptContainer .mainScriptUpperHalf{
+    width: 100%;
+    height: 57%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mainScriptUpperHalf div{
+    padding: 25px;
+}
+
+.upperHalfSplitContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.upperHalfSplitContainer div{
+    border-radius: 25px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.158);
+    width: 100%;
+    text-align: center;
+}
+
+.mainScriptLowerHalf{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    height: 43%;
+    padding: 25px;
+    align-items: center;
+}
+
+.mainScriptLowerHalf div{
+    margin: 15px;
+    border-radius: 15px;
+
+}
+
+.upperHalfCardContainer
+{
+    width: 50%;
+}
+
+@media (max-width: 991px)
+{
+    .upperHalfSplitContainer
+    {
+        display: none;
+    }
+    .mainScriptContainer .mainScriptUpperHalf
+    {
+        justify-content: center;
+    }
+    .mainScriptLowerHalf
+    {
+        flex-direction: column;
+    }
+    .mainScriptLowerHalf div
+    {
+        border-top: 1px solid black;
+        border-radius: 0px;
+        padding-top: 10px;
+
+    }
+    .mainScriptContainer
+    {
+        padding: 5px;
+    }
 }
