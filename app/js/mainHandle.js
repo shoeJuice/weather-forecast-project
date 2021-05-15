@@ -12,8 +12,12 @@ class LikeButton extends React.Component {
   }
 
   render() {
-
-    return e;
+    const j = (<h1>
+        Hi yall! I'm Remy and I'm using JS for the first time!
+    </h1>)
+    return (<h1>
+        Hi yall! I'm Remy and I'm using JS for the first time!
+    </h1>);
   }
 }
 
