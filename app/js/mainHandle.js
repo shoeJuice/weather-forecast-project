@@ -5,7 +5,7 @@ const e = (<h1>
 </h1>
 );
 
-class LikeButton extends React.Component {
+class WeatherCard extends React.Component {
   constructor(props) {
     super(props);
     this.state = { liked: false };
@@ -22,4 +22,4 @@ class LikeButton extends React.Component {
 }
 
 const domContainer = document.querySelector('#myDOM');
-ReactDOM.render(<LikeButton />, domContainer);
+ReactDOM.render(<WeatherCard />, domContainer);
