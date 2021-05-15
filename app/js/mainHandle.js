@@ -1,20 +1,21 @@
-class WelcomeHome extends React.Component{
-    constructor(props){
-        super(props);
-        state = {
-            location: '',
-            weather: ''
-        }  
-    }
-    
+'use strict';
 
-    render() {
-        return(
-            <div>
-                <h2>Hi! Is this working?</h2>
-            </div>
-            )
-    }
+const e = (<h1>
+    It's working!!!!
+</h1>
+);
+
+class LikeButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { liked: false };
+  }
+
+  render() {
+
+    return e;
+  }
 }
 
-document.getElementById('mainCard').innerHTML = "Testing";
+const domContainer = document.querySelector('#myDOM');
+ReactDOM.render(<LikeButton />, domContainer);
