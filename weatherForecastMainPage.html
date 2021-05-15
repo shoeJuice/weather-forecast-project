@@ -17,8 +17,6 @@
         <div class="mainScriptContainer">
             <div class="mainScriptUpperHalf">
                 <div class="upperHalfCardContainer">
-                    <p>Placeholder Text</p>
-                    <p>Placeholder Tet</p> 
                 </div>
                 <div class="upperHalfSplitContainer">
                     <div>
@@ -52,7 +50,19 @@
         </div>
     </section>
     <!---->
-    
+    <script
+      src="https://unpkg.com/react@16/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="app/js/mainHandle.js"></script>
+    <script type="text/babel">
+        ReactDOM.render(<welcomeHome/>, document.querySelector('.upperHalfCardContainer'));
+    </script>
 </body>
 
 </html>
