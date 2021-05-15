@@ -11,7 +11,7 @@ class welcomeHome extends React.Component{
     render() {
         return(
             <div>
-                <p>Hi! Is this working?</p>
+                <h2>Hi! Is this working?</h2>
             </div>
             )
     }
