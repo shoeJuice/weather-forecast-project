@@ -1,4 +1,4 @@
-class welcomeHome extends React.Component{
+class WelcomeHome extends React.Component{
     constructor(props){
         super(props);
         state = {
