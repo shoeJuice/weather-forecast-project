@@ -92,7 +92,11 @@
 {
     width: 50%;
 }
-
+.upperHalfCardContainer div
+{
+    border-radius: 25px;
+    background-color: gray;
+}
 @media (max-width: 991px)
 {
     .upperHalfSplitContainer
