@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 const baseUrl = 'http://api.openweathermap.org/data/2.5/weather?';
-const apiKey = '69216bc1e255a60480a846fcb5004876';
+const forecastUrl = 'http://api.openweathermap.org/data/2.5/forecast?';
+const apiKey = '';
+const forecastKey = '';
 
 export const getWeatherData = async (cityname) => {
     try
@@ -11,6 +13,21 @@ export const getWeatherData = async (cityname) => {
     }
     catch(error)
     {
+        alert(`Error! ${cityname} not found.`);
+        console.log(error.stack);
         throw error;
     }
 } 
+
+export const getWeatherForecast = async (cityname) => {
+    try {
+        const {data} = await axios.get(forecastUrl + `q=${cityname}&appid=${forecastKey}`)
+        return data;
+    }
+    catch(error)
+    {   
+        alert(`Error! ${cityname} not found.`);
+        console.log(error.stack);
+        throw error;
+    }
+}
